@@ -1,0 +1,291 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>A propos</title>
+		
+		<style>
+		
+			p,li{
+			text-align:justify;
+			font-size:15px;
+			line-height: 1.5;
+			font-family:Arial;
+			margin-left:50px;
+			margin-right:50px;
+			}
+			
+			h1, h2{
+			margin-left:50px;
+			margin-right:50px;
+			}
+			
+			#logo{
+			position:absolute;
+			left:30px;
+			top:30px;
+			}
+			
+			#logo img{
+			width:350px;
+			height:300px;	
+			}
+			
+			
+			nav a{
+			text-decoration:none;
+			background-color:black;
+			color:white;
+			padding:13px;
+			margin:10px;
+			border-radius:20px
+			}
+			
+			nav{
+			position:relative;
+			justify-content:center;
+			right:-370px;
+			top:270px;
+			}
+			
+			nav a:hover{
+			background-color:white;
+			color:black;
+			}
+			
+			nav a:visited{
+			color:red;
+			}
+			
+			header{
+			height:350px;
+			width:1505px;
+			background-color:lightgray;
+			}
+			
+			#devise{
+			font-size:25px;
+			text-align:center;
+			font-family:engravers mt;
+			position:absolute;
+			left:300px;
+			top:100px;
+			}
+			
+			
+			#jean{
+			width:350px;
+			height:400px;
+			float:left;          /*Position flottante gauche*/			margin-right:30px;
+			margin-left:50px;
+			object-fit:cover;
+			border-radius:20px;
+			}
+			
+			#jeanDesc{
+			width:900px;
+			}
+			
+			#dessousJean{
+			clear:both;       /*Effacer ou annuler le flottement*/
+			}
+			
+			#christine{
+			width:350px;
+			height:380px;
+			float:left;
+			margin-right:30px;
+			margin-left:50px;
+			margin-top:20px;
+			object-fit:cover;
+			border-radius:20px;
+			}
+			
+			#christineDesc{
+			width:900px;
+			}
+			
+			span{
+			font-style:italic;
+			}
+			
+			#dessousChristine{
+			clear:both;
+			}
+			
+			button{
+		    font-size:15px;
+			padding:15px 20px;
+			background-color:green;
+			border-radius:20px;
+			}
+			
+			#CV{
+			margin-left:50px;			
+			}
+			
+			#CV a{
+			color:black;
+			text-decoration:none;
+			}
+			
+			button:hover{
+			background-color:red;
+			}
+			
+			#seance img{
+			width:275px;
+			height:350px;
+			object-fit:cover;
+			border-radius:20px;
+			}
+			
+			#seance{
+			display:flex;
+			gap:10px;
+			margin-left:50px
+			}
+			
+			footer{
+			background-color:#8c9aa3;
+			color:white;
+			border-radius:10px;
+			padding:20px;
+			text-align:center;
+			font-family:Arial, sans-serif;
+			font-size:13px;
+			margin-top:20px;
+			}
+			
+			footer a{
+			text-decoration:none;
+			}
+			
+			footer a:hover{
+			text-decoration:underline;
+			}
+			
+			/*dimensionnement de la video*/
+			.video{
+			width:350px;
+			height:300px;
+			margin-left:50px;
+			}
+			
+			.audio{
+			width:350px;
+			height:300px;
+			margin-left:50px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+	    <header>
+			<div id="logo">
+				<img src="images/logo.png" alt="logo"/>
+			</div>
+			
+			<p id="devise">Notre devise : « Capturer l’instant, garder l’émotion.»</p>
+			
+			<nav>	
+				<a href="Accueil.html" target="_blank">Accueil</a>
+				<a href="propos.html" target="_blank">A propos de nous</a>
+				<a href="historique.html" target="_blank">Historique</a>
+				<a href="vision.html" target="_blank">Vision</a>
+				<a href="mission.html" target="_blank">Mission</a>
+				<a href="objectif.html" target="_blank">Objectif</a>
+				<a href="contactez-nous.html" target="_blank">Contactez-nous</a>
+				<a href="sondage.html" target="_blank">Sondage</a>
+			</nav>
+		
+	    </header>
+	
+		<h1>A propos de nous</h1>
+		
+			<p>Chez Arakaza Photo Studio, nous sommes convaincus que la photographie est un art capable de transformer des instants simples en souvenirs éternels.<br/>
+			   Notre entreprise est née de la passion pour l'image et du désir de mettre en valeur chaque moment important de la vie.</p>
+			
+			<p>Nous proposons des services de photographie adaptés aussi bien aux particuliers(mariages,anniversaires,portraits,etc.) qu'aux entreprises(shooting produits, 
+			   communication visuelle, événements professionnels).</p>
+			   
+			<p>Notre objectif est simple: capturer vos instants uniques avec créativité, professionnalisme et des équipements modernes.</p>
+			
+		<h2>Notre équipe de professionnels</h2>
+		
+			<img src="images/jean.jpg" alt="Jean" id="jean"/>
+			
+			<div id="jeanDesc">
+				<h3>Jean Ndayishimiye - Photographe principal</h3>
+				
+				<p>Avec plus de 8 années d'expérience, Jean est spécialié dans la photographie de mariage et de portrait artistique.</p>
+				
+				<p>Formé à l'école des Beaux-Arts de Paris et ayant participé à plusieurs ateliers internationaux, il a couvert plusieurs mariages et événements à travers le 
+				   Burundi et la région des Grands Lacs.</p>
+				   
+				<p>Son style unique mélange créativité, lumière naturelle et émotions humaines ce qui rend chaque photo vivante et authentique.</p>
+				
+				<p><em>👉"Mon but est de raconter des histoires à travers mes photos, pour que chaque instant devienne inoubliable"</em></p>
+				
+				<p id="dessousJean"></p>	
+			</div>
+			
+			<img src="images/christine.jpg" alt="Christine" id="christine"/>
+			
+			<div id="christineDesc">
+				<h3>Christine Uwamahoro - Experte en retouche et édition photo</h3>
+				
+				<p>Diplômée en design graphique et passionnée par la photographie depuis son enfance, christine maîtrise les logiciels de retouche le plus avancés(Photoshop,
+				   Lightroom, etc.).</p>
+				
+				<p>Grâce à son expérience, elle transforme chaque cliché en une oeuvre d'art en respectant l'authenticité et les émotions du moment.</p>
+				
+				<p>Elle a traviallé sur des campagnes publicitaires, des shootings de mode et des projets artistiques, ce qui fait d'elle une référence dans le domaine de 
+				   l'édition visuelle moderne.</p>
+				
+				<p><span>👉"Une photo réussie, c'est une émotion sublimée par la créativité."</span></p>
+				
+				<p id="dessousChristine"></p>
+			</div>
+			
+			<p>Apprenez-en plus sur notre expérience et nos réalisations.</p>
+			<div id="CV">
+				<button><a href="documents/CV_Equipe.pdf" download>Télécharger le CV de l'équipe</a></button>
+			</div>
+		
+		<h2>Nos équipements de pointe et sessions</h2>
+		
+			<p>Nous croyons que de grands résultats demandent de grands outils. C'est pourquoi Arakaza Photo Studio investit dans du matériel moderne:</p>
+			
+			<ul>
+				<li>Appareils photo professionnels (Canon EOS, Nikon D850, Sony Alpha)</li>
+				<li>Objectifs variés pour couvrir tous les styles: portraits,paysages,événements.</li>
+				<li>Eclairage de studio et accessoires pour un rendu impeccable en intérieur comme en extérieur.</li>
+				<li>Un espace moderne et bien équipé pour des séances confortables et professionnelles.</li>
+				<li>Des décors variés et personnalisés adaptés à vos envies (portrait,famille,mode,produits).</li>
+			</ul>
+			
+			<div id="seance">
+				<img src="images/sonny.jpg" alt="Caméra Sonny"/>
+				<img src="images/famille1.jpg" alt="Photo de famille avec cadre"/>
+				<img src="images/damson.jpg" alt="Damson Idris"/>
+				<img src="images/session1.jpg" alt="Une des sessions"/>
+				<img src="images/famille2.jpg" alt="Photo de famille"/>
+			</div>
+			
+			<p>Avec nos nombreuses matériels, nous vous promettons un rendement meilleur</p>
+			<video class="video" controls src="video/video1.mp4"></video>
+			
+			<p>Sans oublier aussi que nous proposons des enseignement en photographie pour apprendre les bases de la photographie</p>
+			
+			<audio class="audio" controls src="audio/audio.mp3"></audio>
+			
+		<footer>
+			<p>Auteur: Don du ciel ARAKAZA | Matricule: BIU-BST-12-024-2024</p>
+			<p>Contact: <a href="mailto:arakaza@gmail.com">arakaza@gmail.com</a></p>
+			<p>&copy; 2025 Don du ciel ARAKAZA. Tous droit réservés.</p>
+		</footer>
+	</body>
+	
+</html>

@@ -1,0 +1,240 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Accueil</title>
+		<style>
+			p,li{
+			text-align:justify;     /*Etirer les lignes pour que le texte soit alignés à la fois à gauche et à droite*/
+			font-size:15px;
+			line-height: 1.5;    /*Espacement interlignes*/
+			font-family:Arial;
+			margin-left:50px;     /*Espacement bord*/
+			margin-right:50px;
+			}
+			
+			/*La mise en page des titres*/
+			h1, h2{
+			margin-left:50px;
+			margin-right:50px;
+			}
+			
+			/*Pour positionner le logo à un endroit sur la page sans tenir compte des autres éléments*/
+			#logo{
+			position:absolute;
+			left:30px;
+			top:30px;
+			
+			}
+			
+			/*Donner les dimensions au logo*/
+			#logo img{      
+			width:350px;
+			height:300px;	
+			}
+			
+			/*La mise en page des liens de navigation*/
+			nav a{
+			text-decoration:none;
+			background-color:black;
+			color:white;
+			padding:13px;
+			margin:10px;
+			border-radius:20px;    /*Arrondir la bordure*/
+			}
+			
+			nav{
+			position:relative;
+			justify-content:center;
+			right:-370px;
+			top:270px;
+		
+			}
+			
+			/*Changer le style d'un lien au survol*/
+			nav a:hover{
+			background-color:white;
+			color:black;
+			}
+            
+			/*Changement des liens visités*/
+			nav a:visited{
+			color:red;
+			}
+			
+			header{
+			height:350px;
+			width:1505px;
+			background-color:lightgray;
+			
+			}
+			
+			#devise{
+			font-size:25px;
+			text-align:center;
+			font-family:"engravers mt";
+			position:absolute;
+			left:300px;
+			top:100px;
+			}
+			
+			#camera{
+			width:300px;
+			height:300px;
+			object-fit:cover;   /*Pour que l'image s'ajuste sans se déformer*/
+			position:absolute;
+			right:200px;
+			top:450px
+			}
+			
+			
+			#gaucheCamera{
+			width:800px;
+			border:2px solid #007BFF;
+			border-radius:20px;
+			padding:15px 0px;
+			}
+			
+			span{
+			font-weight:bold;  
+			}
+			
+			#RougeNoir img{
+			width:350px;
+			height:300px;
+			object-fit:cover;
+			border-radius:20px;
+			}
+			
+			#RougeNoir{
+			display:flex;    /*Disposition flexible*/
+			gap:30px;
+			margin-left:60px;
+			}
+			
+			footer{
+			background-color:#8c9aa3;
+			color:white;
+			padding:20px;
+			border-radius:10px;
+			text-align:center;                  /*Centrer le texte*/
+			font-family:Arial, sans-serif;
+			font-size:13px;
+			margin-top:20px;
+			}
+			
+			footer a{
+			text-decoration:none;
+			}
+			
+			footer a:hover{
+			text-decoration:underline;
+			}
+			
+			.progress-container{
+			width:100%;           /*Prend toute la largeur du conteneur*/
+			background-color:#e0e0e0;
+			border-radius:20px;
+			overflow:hidden;      /*Masquer les depassements*/
+			height:20px;
+			margin:10px 0px;
+			}
+			
+			.progress-bar{
+			height:100px;
+			width:0px;
+			background-color:#8c9aac;
+			animation: fillProgress 2s forwards;     /*Effet de remplissage de la barre*/
+			}
+			
+			/*Définition de l'animation*/
+			@keyframes fillProgress{
+			from{width:0;}
+			to{width:90%}                /*Modifier le pourcentage selon le besoin*/
+			}
+		</style>
+	</head>
+
+    <body>
+		<header>
+		
+			<div id="logo">
+				<img src="images/logo.png" alt="logo"/>
+			</div>
+			
+			<p id="devise">Notre devise : « Capturer l’instant, garder l’émotion.»</p>
+			
+			<nav>	
+				<a href="Accueil.html" target="_blank">Accueil</a>
+				<a href="propos.html" target="_blank">A propos de nous</a>
+				<a href="historique.html" target="_blank">Historique</a>
+				<a href="vision.html" target="_blank">Vision</a>
+				<a href="mission.html" target="_blank">Mission</a>
+				<a href="objectif.html" target="_blank">Objectif</a>
+				<a href="contactez-nous.html" target="_blank">Contactez-nous</a>
+				<a href="sondage.html" target="_blank">Sondage</a>
+			</nav>	
+			
+		</header>
+		
+		<div class="progress-container">
+		    <div class="progress-bar"></div>
+		</div>
+		
+		<h1>Bienvenue chez Arakaza Photo Studio</h1>
+			
+			<img src="images/camera.png" alt="Une camera" id="camera"/>
+			
+			<div id="gaucheCamera">
+				<p>Vous êtes à la bonne adresse si vous voulez transformer vos moments précieux en souvenirs inoubliables. Chez <span>Arakaza Photo Studio</span>, nous croyons que 
+				   chaque instant de vie mérite d'être capturé avec soin et créativité.</p>
+				
+				<p>Nous sommes une entreprise spécialisée dans la photographie professionnelle et artistique.
+				   Que ce soit pour vos mariages, dots, prêt-dot, anniversaire, portraits, événements, produits ou créations artistiques, 
+				   nous transformons chaque instant en un souvenir inoubliable.</p>
+				
+				<p>Chez nous, chaque photo n’est pas seulement une image, mais une histoire, un souvenir et un œuvre d’art.</p>
+				
+				<p>Depuis notre création, nous avons accompagné des dizaines de clients (particuliers, couples, familles et entreprises) à immortaliser leurs moments les
+      				plus précieux.</p>
+			</div>
+			
+			<p>Que vous soyez à la recherche d’un photographe pour un mariage, un shooting professionnel, une photo de famille ou la mise en valeur de vos produits, 
+				notre mission est de capturer vos instants uniques avec créativité et professionnalisme</p>
+				
+			<p>Nous croyons que la photographie n’est pas seulement un service, mais une passion qui unit les cœurs et transmet les émotions. C’est pourquoi nous investissons 
+				dans des équipements modernes et travaillons avec des techniques innovantes pour offrir des clichés de haute qualité adaptés à vos besoins.</p>
+				
+		<h2>Ce que nous faisons</h2>
+		
+			<div id="RougeNoir">
+				<img src="images/rouge.png"/>
+				<img src="images/noire.png"/>
+			</div>
+				
+			<ol>
+				<li>Photographie professionnelle-portraits,mariages,événements,mode.</li>
+				<li>Retouche et éditions-amélioration de la qualité de vos images.</li>
+				<li>création de souvenirs-albums,cadres et impression personnalisées.</li>
+				<li>Accompagnement client-conseils avant et après chaque séance.</li>
+			</ol>
+			
+		<h2>Pourquoi nous choisir</h2>
+		
+			<ul>
+				<li>Un savoir-faire professionnel dans différents styles de photographie.</li>
+				<li>Des séances personnalisées adaptées à vos attentes.</li>
+				<li>Une équipe dynamique et créative.</li>
+				<li>Des prix compétitifs accessibles à tous.</li>
+			</ul>
+		
+		
+		<footer>
+			<p>Auteur: Don du ciel ARAKAZA | Matricule: BIU-BST-12-024-2024</p>
+			<p>Contact: <a href="mailto:arakaza@gmail.com">arakaza@gmail.com</a></p>
+			<p>&copy; 2025 Don du ciel ARAKAZA. Tous droit réservés.</p>
+		</footer>
+	</body>
+
+
+</html>
