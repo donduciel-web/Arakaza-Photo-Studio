@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8"/>
@@ -19,34 +20,44 @@
 			margin-right:50px;
 			}
 			
-			#logo{
-			position:absolute;
-			left:30px;
-			top:30px;
-			
+			header{
+			background-color:lightgray;
+			padding:20px ;
+			border-radius:20px;
 			}
 			
-			#logo img{
+			.top{
+			display:flex;
+			align-items:flex-start;
+			gap:30px;
+			}
+			
+			.logo{
 			width:350px;
-			height:300px;	
+			height:auto;	
 			}
 			
+			.right{
+			display:flex;
+			flex-direction:column;
+			gap:30px;
+			}
+			
+			nav{
+			display:flex;
+			flex-wrap:wrap;
+			gap:10px;
+			}
 			
 			nav a{
 			text-decoration:none;
 			background-color:black;
 			color:white;
 			padding:13px;
-			margin:10px;
 			border-radius:20px;
+			margin-right:20px;
 			}
 			
-			nav{
-			position:relative;
-			justify-content:center;
-			right:-440px;
-			top:270px;
-			}
 			
 			nav a:hover{
 			background-color:white;
@@ -57,20 +68,32 @@
 			color:red;
 			}
 			
-			header{
-			height:350px;
-			width:1505px;
-			background-color:lightgray;
+			.devise{
+			font-size:25px;
+			font-family:"Engravers MT", sans-serif;
+			margin:0;
 			}
 			
-			#devise{
-			font-size:25px;
-			text-align:center;
-			font-family:engravers mt;
-			position:absolute;
-			left:370px;
-			top:100px;
+			.search input{
+			padding:5px;
 			}
+			
+			.search button{
+			padding:5px 10px;
+			}
+			
+			button{
+		   background-color:#007BFF;
+		   color:white;
+		   border:none;
+		   padding:8px 15px;
+		   border-radius:8px;
+		   cursor:pointer;
+		   }
+		
+		   button:hover{
+		   background-color:#0056b3;
+		   }
 			
 			footer{
 			background-color: #8c9aa3;
@@ -90,28 +113,62 @@
 			footer a:hover{
 			text-decoration:underline;
 			}
+			
+			@media(max-width:600px) {
+				.top{
+				flex-direction:column;
+				align-items:center;
+				gap:20px;
+				}
+				
+				.right{
+				align-items:center;
+				}
+				
+				.logo{
+				width:250px;
+				}
+				
+				nav a{
+				padding:10px;
+				font-size:13px;
+				}
+				
+				.search input{
+				width:150px;
+				}
+			}
 		</style>
 	</head>
 	
 	<body>
 	
 		<header>
-			<div id="logo">
-				<img src="images/logo.png" alt="logo"/>
+		
+			<div class="top">
+				<img src="images/logo.png" alt="Logo" class="logo"/>
+					
+				<div class="right">
+					<p class="devise">Notre devise : « Capturer l’instant, garder l’émotion.»</p>
+						
+					<nav>			
+						<a href="index.html" target="_blank">Accueil</a>
+						<a href="propos.html" target="_blank">A propos de nous</a>
+						<a href="historique.html" target="_blank">Historique</a>
+						<a href="vision.html" target="_blank">Vision</a>
+						<a href="mission.html" target="_blank">Mission</a>
+						<a href="objectif.html" target="_blank">Objectif</a>
+						<a href="contactez-nous.html" target="_blank">Contactez-nous</a>
+						<a href="sondage.html" target="_blank">Sondage</a>
+					</nav>
+					
+					<form class="search">
+						<input type="search..."  placeholder="Rechercher...">
+						<button type="submit">OK</button>
+					</form>
+				</div>
+				
 			</div>
-				
-			<p id="devise">Notre devise : « Capturer l’instant, garder l’émotion.»</p>
-				
-			<nav>	
-				<a href="index.html" target="_blank">Accueil</a>
-				<a href="propos.html" target="_blank">A propos de nous</a>
-				<a href="historique.html" target="_blank">Historique</a>
-				<a href="vision.html" target="_blank">Vision</a>
-				<a href="mission.html" target="_blank">Mission</a>
-				<a href="objectif.html" target="_blank">Objectif</a>
-				<a href="contactez-nous.html" target="_blank">Contactez-nous</a>
-				<a href="sondage.html" target="_blank">Sondage</a>				
-		    </nav>
 			
 		</header>
 		
@@ -178,6 +235,4 @@
 			<p>&copy; 2025 Don du ciel ARAKAZA. Tous droit réservés.</p>
 		</footer>
 	</body>
-
 </html>
-
