@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8"/>
@@ -15,37 +16,47 @@
 			margin-right:50px;
 			}
 			
-			h1, h2{
+			h1, h2,h3{
 			margin-left:50px;
 			margin-right:50px;
 			}
 			
-			#logo{
-			position:absolute;
-			left:30px;
-			top:30px;
+			header{
+			background-color:lightgray;
+			padding:20px ;
+			border-radius:20px;
 			}
 			
-			#logo img{
+			.top{
+			display:flex;
+			align-items:flex-start;
+			gap:30px;
+			}
+			
+			.logo{
 			width:350px;
-			height:300px;	
+			height:auto;	
 			}
 			
+			.right{
+			display:flex;
+			flex-direction:column;
+			gap:30px;
+			}
+			
+			nav{
+			display:flex;
+			flex-wrap:wrap;
+			gap:10px;
+			}
 			
 			nav a{
 			text-decoration:none;
 			background-color:black;
 			color:white;
 			padding:13px;
-			margin:10px;
-			border-radius:20px
-			}
-			
-			nav{
-			position:relative;
-			justify-content:center;
-			right:-440px;
-			top:270px;
+			border-radius:20px;
+			margin-right:20px;
 			}
 			
 			nav a:hover{
@@ -57,26 +68,38 @@
 			color:red;
 			}
 			
-			header{
-			height:350px;
-			width:1505px;
-			background-color:lightgray;
-			}
-			
-			#devise{
+			.devise{
 			font-size:25px;
-			text-align:center;
-			font-family:engravers mt;
-			position:absolute;
-			left:370px;
-			top:100px;
+			font-family:"Engravers MT", sans-serif;
+			margin:0;
 			}
 			
+			.search input{
+			padding:5px;
+			}
+			
+			.search button{
+			padding:5px 10px;
+			}
+			
+			button{
+		   background-color:#007BFF;
+		   color:white;
+		   border:none;
+		   padding:8px 15px;
+		   border-radius:8px;
+		   cursor:pointer;
+		   }
+		
+		   button:hover{
+		   background-color:#0056b3;
+		   }
 			
 			#jean{
-			width:350px;
+			width:300px;
 			height:400px;
-			float:left;          /*Position flottante gauche*/			margin-right:30px;
+			float:left;          /*Position flottante gauche*/			
+			margin-right:30px;
 			margin-left:50px;
 			object-fit:cover;
 			border-radius:20px;
@@ -86,12 +109,16 @@
 			width:900px;
 			}
 			
+			#jeanDesc{
+			text-align:center;
+			}
+			
 			#dessousJean{
 			clear:both;       /*Effacer ou annuler le flottement*/
 			}
 			
 			#christine{
-			width:350px;
+			width:300px;
 			height:380px;
 			float:left;
 			margin-right:30px;
@@ -105,6 +132,10 @@
 			width:900px;
 			}
 			
+			#christineDesc{
+			text-align:center;
+			}
+			
 			span{
 			font-style:italic;
 			}
@@ -113,11 +144,15 @@
 			clear:both;
 			}
 			
-			button{
+			#CV button{
 		    font-size:15px;
 			padding:15px 20px;
 			background-color:green;
 			border-radius:20px;
+			}
+			
+			#CV button:hover{
+			background-color:red;
 			}
 			
 			#CV{
@@ -129,21 +164,18 @@
 			text-decoration:none;
 			}
 			
-			button:hover{
-			background-color:red;
+			#seance{
+			display:flex;
+			gap:10px;
+			margin-left:50px;
 			}
 			
 			#seance img{
 			width:275px;
 			height:350px;
+			margin-left:60px;
 			object-fit:cover;
 			border-radius:20px;
-			}
-			
-			#seance{
-			display:flex;
-			gap:10px;
-			margin-left:50px
 			}
 			
 			footer{
@@ -167,48 +199,121 @@
 			
 			/*dimensionnement de la video*/
 			.video{
-			width:350px;
+			width:300px;
 			height:300px;
 			margin-left:50px;
 			}
 			
 			.audio{
-			width:350px;
+			width:300px;
 			height:300px;
 			margin-left:50px;
+			background-color:black;
+			}
+			
+			@media(max-width:600px) {
+				.top{
+				flex-direction:column;
+				align-items:center;
+				gap:20px;
+				}
+				
+				.right{
+				align-items:center;
+				}
+				
+				.logo{
+				width:250px;
+				}
+				
+				nav a{
+				padding:10px;
+				font-size:13px;
+				}
+				
+				.search input{
+				width:150px;
+				}
+				
+				#seance{
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				}
+				
+				#seance img{
+				margin:10px 0 ;
+				}
+				
+				#jean{
+				float:none;           /*Ne pas déplacer l'élément sur le côté*/
+				width:90%;
+				height:auto;           /*Hauteur automatique selon le contenu*/
+				margin:0 auto 20px auto;
+				display:block;
+				}
+				
+				#jeanDesc{
+				width:100%;
+				margin:0
+				padding:0;        /*Enlever toutes les espacements internes*/
+				}
+				
+				#christine{
+				float:none;
+				width:90%;
+				height:auto;
+				margin:0 auto 20px auto;
+				display:block;
+				}
+				
+				#christineDesc{
+				width:100%;
+				margin:0;
+				padding:0;
+				}
 			}
 		</style>
 	</head>
 	
 	<body>
 	
-	    <header>
-			<div id="logo">
-				<img src="images/logo.png" alt="logo"/>
+        <header>
+		
+			<div class="top">
+				<img src="images/logo.png" alt="Logo" class="logo"/>
+					
+				<div class="right">
+					<p class="devise">Notre devise : « Capturer l’instant, garder l’émotion.»</p>
+						
+					<nav>			
+						<a href="index.html" target="_blank">Accueil</a>
+						<a href="propos.html" target="_blank">A propos de nous</a>
+						<a href="historique.html" target="_blank">Historique</a>
+						<a href="vision.html" target="_blank">Vision</a>
+						<a href="mission.html" target="_blank">Mission</a>
+						<a href="objectif.html" target="_blank">Objectif</a>
+						<a href="contactez-nous.html" target="_blank">Contactez-nous</a>
+						<a href="sondage.html" target="_blank">Sondage</a>
+					</nav>
+					
+					<form class="search">
+						<input type="search..."  placeholder="Rechercher...">
+						<button type="submit">OK</button>
+					</form>
+				</div>
+				
 			</div>
 			
-			<p id="devise">Notre devise : « Capturer l’instant, garder l’émotion.»</p>
-			
-			<nav>	
-				<a href="index.html" target="_blank">Accueil</a>
-				<a href="propos.html" target="_blank">A propos de nous</a>
-				<a href="historique.html" target="_blank">Historique</a>
-				<a href="vision.html" target="_blank">Vision</a>
-				<a href="mission.html" target="_blank">Mission</a>
-				<a href="objectif.html" target="_blank">Objectif</a>
-				<a href="contactez-nous.html" target="_blank">Contactez-nous</a>
-				<a href="sondage.html" target="_blank">Sondage</a>
-			</nav>
-		
-	    </header>
+		</header>
 	
 		<h1>A propos de nous</h1>
 		
 			<p>Chez Arakaza Photo Studio, nous sommes convaincus que la photographie est un art capable de transformer des instants simples en souvenirs éternels.<br/>
 			   Notre entreprise est née de la passion pour l'image et du désir de mettre en valeur chaque moment important de la vie.</p>
 			
-			<p>Nous proposons des services de photographie adaptés aussi bien aux particuliers(mariages,anniversaires,portraits,etc.) qu'aux entreprises(shooting produits, 
-			   communication visuelle, événements professionnels).</p>
+			<p>Nous proposons des services de photographie adaptés aussi bien aux particuliers(mariages, anniversaires, portraits,etc.) qu'aux 
+			   entreprises(shooting produits, communication visuelle, événements professionnels).</p>
 			   
 			<p>Notre objectif est simple: capturer vos instants uniques avec créativité, professionnalisme et des équipements modernes.</p>
 			
@@ -234,7 +339,7 @@
 			<img src="images/christine.jpg" alt="Christine" id="christine"/>
 			
 			<div id="christineDesc">
-				<h3>Christine Uwamahoro - Experte en retouche et édition photo</h3>
+				<h3>Christine Ndaje - Experte en retouche et édition photo</h3>
 				
 				<p>Diplômée en design graphique et passionnée par la photographie depuis son enfance, christine maîtrise les logiciels de retouche le plus avancés(Photoshop,
 				   Lightroom, etc.).</p>
@@ -274,12 +379,17 @@
 				<img src="images/famille2.jpg" alt="Photo de famille"/>
 			</div>
 			
-			<p>Avec nos nombreuses matériels, nous vous promettons un rendement meilleur</p>
-			<video class="video" controls src="video/video1.mp4"></video>
+			<h3>Nos caméras-en video</h3>
 			
-			<p>Sans oublier aussi que nous proposons des enseignement en photographie pour apprendre les bases de la photographie</p>
+				<p>Voici un aperçu du matériel que nous utilisons chaque jour pour vous offrir des images limineuses, nettes et professionnelles.</p>
+				
+				<video class="video" controls src="video/video1.mp4"></video>
+			<h3>Formez-vous avec nos experts</h3>
 			
-			<audio class="audio" controls src="audio/audio.mp3"></audio>
+				<p>APS vous offre des cours adaptés pour apprendre les bases de la photographie: réseau, lumière, angles, composition, retouche…
+				   <br/>Des séances simples, pratiques et accessibles à tous.</p>
+				
+				<audio class="audio" controls src="audio/audio.mp3"></audio>
 			
 		<footer>
 			<p>Auteur: Don du ciel ARAKAZA | Matricule: BIU-BST-12-024-2024</p>
@@ -289,6 +399,3 @@
 	</body>
 	
 </html>
-
-
-
